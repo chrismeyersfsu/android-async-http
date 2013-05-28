@@ -563,7 +563,7 @@ public class AsyncHttpClient {
      * @param responseHandler the response handler instance that should handle the response.
      */
     public void patch(Context context, String url, HttpEntity entity, String contentType, AsyncHttpResponseHandler responseHandler) {
-        sendRequest(httpClient, httpContext, addEntityToRequestBase(new HttpPut(url), entity), contentType, responseHandler, context);
+        sendRequest(httpClient, httpContext, addEntityToRequestBase(new HttpPatch(url), entity), contentType, responseHandler, context);
     }
     
     /**
